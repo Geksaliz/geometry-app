@@ -1,0 +1,17 @@
+package ru.koleso;
+
+public class Application {
+    public static void main(String[] args) {
+        GeometricShapes circle = new Circle(10.0);
+        System.out.printf("Circle area: %.2f\n", circle.getArea());
+        System.out.printf("Circle perimeter: %.2f\n\n", circle.getPerimeter());
+
+        GeometricShapes rectangle = new Rectangle(10.0,10.0);
+        System.out.printf("Rectangle area: %.2f\n", rectangle.getArea());
+        System.out.printf("Rectangle perimeter: %.2f\n\n", rectangle.getPerimeter());
+
+        GeometricShapes triangle = new Triangle(10.0,10.0,10.0);
+        System.out.printf("Triangle area: %.2f\n", triangle.getArea());
+        System.out.printf("Triangle perimeter: %.2f\n", triangle.getPerimeter());
+    }
+}
