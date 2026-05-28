@@ -20,6 +20,8 @@ public class Application {
         System.out.printf("Triangle perimeter: %.2f\n\n", triangle.getPerimeter());
 
         System.out.printf("Centimeters to meters: %.2f\n", GeometryUtils.centimetersToMeters(100.00));
-        System.out.printf("Meters to centimeters: %.2f\n\n", GeometryUtils.metersToCentimeters(100.00));
+        System.out.printf("Meters to centimeters: %.2f\n", GeometryUtils.metersToCentimeters(100.00));
+        System.out.printf("Have equals area: %s\n", GeometryUtils.haveEqualArea(circle, circle));
+        System.out.printf("Large shape are: %.2f\n\n", GeometryUtils.getLargerShape(circle, rectangle).getArea());
     }
 }
