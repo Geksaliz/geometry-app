@@ -1,5 +1,9 @@
 package ru.koleso;
 
+import ru.koleso.impl.Circle;
+import ru.koleso.impl.Rectangle;
+import ru.koleso.impl.Triangle;
+
 public class Application {
     public static void main(String[] args) {
         GeometricShapes circle = new Circle(10.0);
