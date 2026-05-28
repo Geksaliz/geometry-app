@@ -3,6 +3,8 @@ package ru.koleso;
 import ru.koleso.impl.Circle;
 import ru.koleso.impl.Rectangle;
 import ru.koleso.impl.Triangle;
+import ru.koleso.multidimensional.Cube;
+import ru.koleso.multidimensional.Sphere;
 import ru.koleso.utils.GeometryUtils;
 
 public class Application {
@@ -23,5 +25,9 @@ public class Application {
         System.out.printf("Meters to centimeters: %.2f\n", GeometryUtils.metersToCentimeters(100.00));
         System.out.printf("Have equals area: %s\n", GeometryUtils.haveEqualArea(circle, circle));
         System.out.printf("Large shape are: %.2f\n\n", GeometryUtils.getLargerShape(circle, rectangle).getArea());
+
+        GeometricShapes cube = new Cube(10.0);
+        System.out.printf("Cube area: %.2f\n", cube.getArea());
+        System.out.printf("Cube perimeter: %.2f\n\n", cube.getPerimeter());
     }
 }
