@@ -29,5 +29,9 @@ public class Application {
         GeometricShapes cube = new Cube(10.0);
         System.out.printf("Cube area: %.2f\n", cube.getArea());
         System.out.printf("Cube perimeter: %.2f\n\n", cube.getPerimeter());
+
+        GeometricShapes sphere = new Sphere(10.0);
+        System.out.printf("Sphere area: %.2f\n", sphere.getArea());
+        System.out.printf("Sphere perimeter: %.2f\n\n", sphere.getPerimeter());
     }
 }
