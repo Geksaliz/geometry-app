@@ -20,6 +20,11 @@
             <artifactId>geometry-library</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>ru.koleso</groupId>
+            <artifactId>geometry-utils</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>

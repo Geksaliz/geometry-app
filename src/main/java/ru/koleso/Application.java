@@ -3,6 +3,7 @@ package ru.koleso;
 import ru.koleso.impl.Circle;
 import ru.koleso.impl.Rectangle;
 import ru.koleso.impl.Triangle;
+import ru.koleso.utils.GeometryUtils;
 
 public class Application {
     public static void main(String[] args) {
@@ -16,6 +17,9 @@ public class Application {
 
         GeometricShapes triangle = new Triangle(10.0,10.0,10.0);
         System.out.printf("Triangle area: %.2f\n", triangle.getArea());
-        System.out.printf("Triangle perimeter: %.2f\n", triangle.getPerimeter());
+        System.out.printf("Triangle perimeter: %.2f\n\n", triangle.getPerimeter());
+
+        System.out.printf("Centimeters to meters: %.2f\n", GeometryUtils.centimetersToMeters(100.00));
+        System.out.printf("Meters to centimeters: %.2f\n\n", GeometryUtils.metersToCentimeters(100.00));
     }
 }
